@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kevin Jasso - Digital CV</title>
+  <meta name="description" content="Digital CV of Kevin Jasso, aspiring software developer and Springboard graduate." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header: Introduction info -->
+  <header>
+    <section>
+      <div class="image-container">
+        <img 
+          src="images/Kevin.jpeg" 
+          alt="Picture of Kevin" 
+          width="200"
+        />
+      </div>
+      <div class="name-container">
+        <h1>Kevin Jasso</h1>
+        <p>Aspiring Software Developer | Springboard Graduate</p>
+      </div>
+      <div class="information-container">
+        <h2>Contact Info:</h2>
+        <p>Phone: (682) 554-8007</p>
+        <p>Email: <a href="mailto:kevin.jas19@gmail.com">kevin.jas19@gmail.com</a></p>
+      </div>
+    </section>
+  </header>
+
+  <main>
+
+    <!-- Summary -->
+    <section>
+      <h2>Summary</h2>
+      <p>
+        I am a graduate of Springboard's Software Development Career Track Program. Through the program, I built a strong
+        foundation in front-end technologies including HTML, CSS, JavaScript, and React. I've completed multiple hands-on
+        projects involving DOM manipulation, API integration, and modern UI frameworks. I'm looking to join a team where I can
+        apply my skills to real-world challenges and continue growing as a developer.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>DOM Manipulation</li>
+        <li>API Integration</li>
+        <li>Git</li>
+        <li>React</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects-section">
+      <h2>Projects</h2>
+      <div class="projects">
+        <a href="#">
+          <div>
+            <h3>Digital CV</h3>
+            <p>A personal resume site built with semantic HTML and responsive layout. Demonstrates structure and clean markup.</p>
+          </div>
+        </a>
+        <a href="#">
+          <div>
+            <h3>Caesar's Cipher</h3> 
+            <p>JavaScript-based encryption app built to demonstrate logic, string manipulation, and user interaction.</p>
+          </div>
+        </a>
+        <a href="#">
+          <div>
+            <h3>DOM Project</h3>
+            <p>Interactive application utilizing DOM selection, manipulation, and event handling for dynamic user feedback.</p>
+          </div>
+        </a>
+        <a href="#">
+          <div>
+            <h3>API Project</h3>
+            <p>App that fetches external data and displays it in real-time using asynchronous JavaScript and axios.</p>
+          </div>
+        </a>
+        <a href="#">
+          <div>
+            <h3>React Space Travel App</h3>
+            <p>A React app simulating a booking platform. Utilized components, props, state, useEffect, and React Router.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section>
+      <h2>Experience</h2>
+      <article>
+        <h3>Walmart - Asset Protection Investigator</h3>
+        <p>April 2022 - Present</p>
+        <p>
+          Conducted investigations, monitored surveillance systems, and ensured loss prevention. Gained strong analytical and
+          problem-solving skills that complement my technical training in software development.
+        </p>
+      </article>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>School / Institution</th>
+            <th>Degree / Program</th>
+            <th>Completion Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="School / Institution">Springboard</td>
+            <td data-label="Degree / Program">Software Development Career Track</td>
+            <td data-label="Completion Year">Completed 2025</td>
+          </tr>
+          <tr>
+            <td data-label="School / Institution">Winfree Academy</td>
+            <td data-label="Degree / Program">High School Diploma</td>
+            <td data-label="Completion Year">Graduated 2020</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Achievements -->
+    <section>
+      <h2>Achievements</h2>
+      <ul>
+        <li>Graduated from Springboard's Software Development Career Track</li>
+        <li>Completed 5 major projects across JavaScript, DOM, API, and React</li>
+        <li>Developed and deployed a complete React-based application</li>
+      </ul>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <form class="contact-form" action="#" method="post">
+        <label>
+          Name:
+          <input type="text" name="name" placeholder="Enter your full name" required>
+        </label>
+        <label>
+          Email:
+          <input type="email" name="email" placeholder="Enter your email address" required>
+        </label>
+        <label>
+          Phone Number:
+          <input type="tel" name="phone" placeholder="Enter your phone number">
+        </label>
+        <label>
+          Organization:
+          <input type="text" name="organization" placeholder="Enter your organization">
+        </label>
+        <label>
+          Role:
+          <input type="text" name="role" placeholder="Enter your role">
+        </label>
+        <label>
+          Reason for Contact:
+          <select name="reason" required>
+            <option value="" disabled selected>Select a reason</option>
+            <option value="job-offer">Job Offer</option>
+            <option value="collaboration">Collaboration</option>
+            <option value="feedback">Feedback</option>
+          </select>
+        </label>
+        <fieldset>
+          <legend>Preferred Contact Method:</legend>
+          <label class="radio"><input type="radio" name="contact-method" value="email" required> Email</label>
+          <label class="radio"><input type="radio" name="contact-method" value="phone"> Phone</label>
+        </fieldset>
+        <label>
+          Message:
+          <textarea name="message" rows="5" placeholder="Write your message here..." required></textarea>
+        </label>
+        <div class="button-row">
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      &copy; 2025 Kevin Jasso |
+      <a href="https://www.linkedin.com/in/kevin-jasso-01081b2b0" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/KevinJasso" target="_blank">GitHub</a>
+    </p>
+  </footer>
+
+</body>
+</html>
